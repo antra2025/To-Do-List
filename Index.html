@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Vibrant Bucket List</title>
+  <style>
+    /* Base styles */
+    body {
+      font-family: 'Arial, sans-serif';
+      margin: 0;
+      padding: 0;
+      background-color: #f0f8ff; /* Light blue background */
+      color: #444;
+    }
+
+    /* Header styles */
+    header {
+      text-align: center;
+      padding: 30px;
+      background: linear-gradient(90deg, #1e90ff, #6495ed); /* Vibrant blue gradient */
+      color: #fff;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    header h1 {
+      font-size: 2.5em;
+      margin: 0;
+    }
+
+    header p {
+      font-size: 1.2em;
+      margin: 10px 0 0;
+    }
+
+    /* Main content styles */
+    main ul {
+      list-style: none;
+      padding: 0;
+      max-width: 600px;
+      margin: 20px auto;
+    }
+
+    main li {
+      font-size: 1.2em;
+      padding: 15px 20px;
+      margin: 15px 0;
+      background-color: #ffffff; /* White background */
+      border: 1px solid #87ceeb; /* Sky blue border */
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      opacity: 0;
+      animation: slideIn 1.5s ease-in-out forwards;
+    }
+
+    main li:nth-child(1) {
+      animation-delay: 0.5s;
+    }
+
+    main li:nth-child(2) {
+      animation-delay: 1s;
+    }
+
+    main li:nth-child(3) {
+      animation-delay: 1.5s;
+    }
+
+    main li:nth-child(4) {
+      animation-delay: 2s;
+    }
+
+    main li:nth-child(5) {
+      animation-delay: 2.5s;
+    }
+
+    main li i {
+      margin-right: 15px;
+      color: #ffbf00; /* Star gold color */
+      font-size: 1.5em;
+      animation: bounce 1.5s infinite alternate ease-in-out;
+    }
+
+    /* Hover effects for list items */
+    main li:hover {
+      background-color: #e6f7ff; /* Light blue hover effect */
+      transform: translateY(-5px) scale(1.02);
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+      transition: transform 0.3s, background-color 0.3s;
+    }
+
+    /* Footer styles */
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: linear-gradient(90deg, #6495ed, #1e90ff); /* Blue gradient */
+      color: #fff;
+      font-size: 1em;
+      margin-top: 20px;
+      animation: fadeInUp 2s ease-in-out;
+    }
+
+    footer p {
+      margin: 5px 0;
+    }
+
+    footer a {
+      color: #f0f8ff; /* Light blue links */
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    /* Keyframes for animations */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes slideIn {
+      from {
+        opacity: 0;
+        transform: translateX(-50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes bounce {
+      from {
+        transform: translateY(0);
+      }
+      to {
+        transform: translateY(-10px);
+      }
+    }
+
+    /* Responsive design */
+    @media (max-width: 600px) {
+      main li {
+        font-size: 1em;
+        padding: 10px 16px;
+      }
+
+      header h1 {
+        font-size: 2em;
+      }
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+  <header>
+    <h1>My Bucket List</h1>
+    <p>Dream big, live fully, and achieve these milestones!</p>
+  </header>
+  <main>
+    <ul>
+      <li><i class="fas fa-star"></i> Travel in Vrindavan</li>
+      <li><i class="fas fa-star"></i> Learn to play the ukulele</li>
+      <li><i class="fas fa-star"></i> Go to a movie with family</li>
+      <li><i class="fas fa-star"></i> Reading a book</li>
+    </ul>
+  </main>
+  <footer>
+    <p>Created with ❤️ by <a href="#">Antra Mishra</a></p>
+    <p>&copy; 2025 My Bucket List</p>
+  </footer>
+</body>
+</html>
